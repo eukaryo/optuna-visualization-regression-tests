@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     if: |
-      ( github.repository == 'optuna/optuna-visualization-regression-tests' ) &&
+      ( github.repository == 'eukaryo/optuna-visualization-regression-tests' ) &&
       (
          contains(github.event.pull_request.labels.*.name, 'safe-to-run-visual-regression-tests') ||
          ( github.event_name == 'workflow_dispatch' )
